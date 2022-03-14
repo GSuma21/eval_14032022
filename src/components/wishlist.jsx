@@ -13,7 +13,7 @@ const Wishlist = () =>{
     }
 
     const addto = () =>{
-       
+       a++
         const payload = {
             title: query,
         };
@@ -27,7 +27,9 @@ const Wishlist = () =>{
     console.log(task)
    
 
-      
+    if(a>3){
+        return "You cannot add more than 3 items to wishlist"
+    }  else{
 
     return (
         <>
@@ -48,7 +50,7 @@ const Wishlist = () =>{
     )
         
            
-        
+        }  
 
    
 }
